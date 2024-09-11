@@ -1,0 +1,82 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: midnightblue;
+}
+h1{
+    color: white;
+}
+form{
+    gap: 30px;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.inputbox{
+    position: relative;
+    width: 250px;
+}
+.inputbox input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    background: midnightblue;
+    border-radius: 8px;
+    outline: none;
+    color: white;
+    font-size: 1em;
+    
+}
+.inputbox span{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: .5s;
+    color: white;
+}
+.inputbox input:valid~span,
+.inputbox input:focus~span
+{
+    color: aqua;
+    transform: translateX(1px) translateY(-20px);
+    background-color: midnightblue;
+}
+.submit{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.submit button{
+    padding: 5px 30px;
+    transition: .5s all ease-in-out;
+    outline: none;
+    border-radius: 5px;
+}
+.submit button:hover{
+    background-color: black;
+    color: white;
+    border: .2px solid white;
+    transform: scale(1.1);
+}
+.submit a{
+    color: aqua;
+    text-decoration: none;
+    transition: .5s;
+}
+.submit a:hover{
+    color: white;
+    transform: scale(1.2);
+}

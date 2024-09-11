@@ -1,0 +1,36 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    height: 300vh;
+    width: 100%;
+}
+.box1{
+    height: 100px;
+    width: 100%;
+    background-color: antiquewhite;
+    position: fixed;
+}
+.box2{
+    height: 100px;
+    width: 100px;
+    top: 30%;
+    position: sticky;
+    
+    background-color: cadetblue;
+}
+.box3{
+    height: 100px;
+    top: 300px;
+    width: 100px;
+    background-color: coral; 
+    position: relative;
+
+}
+.box4{
+    height: 100px;
+    width: 100px;
+    z-index: 3;
+    background-color:darksalmon;   
+}

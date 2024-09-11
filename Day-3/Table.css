@@ -1,0 +1,38 @@
+*{
+    padding: 0%;
+    margin: 0px;
+    color: white;
+}
+body{
+    background-color: midnightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    gap: 50px;
+
+}
+table{
+    height: 300px;
+    width: 400px;
+    border-collapse: collapse;
+    text-align: center;
+}
+th,td{
+    border: 1px solid white;
+}
+.class{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    transition: .5s;
+}
+.class:hover{
+ background-color: rgb(43, 147, 226);
+ transform: translateX(100px) ;
+ border-radius: 50%;
+ 
+
+}
